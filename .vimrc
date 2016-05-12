@@ -37,7 +37,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'airblade/vim-gitgutter'
+
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -50,6 +53,8 @@ colorscheme wellsokai "monokai
 
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+map <C-n> :NERDTreeToggle<CR>
 
 ino " ""<left>
 ino ' ''<left>
