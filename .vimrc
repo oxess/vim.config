@@ -10,6 +10,9 @@ set number
 set hlsearch
 set incsearch
 
+"Lazy reload screen, this don't redraw full screen
+set lazyredraw
+
 set backspace=2
 
 "set list
