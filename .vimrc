@@ -10,6 +10,12 @@ set number
 set hlsearch
 set incsearch
 
+set mouse=a
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 "Lazy reload screen, this don't redraw full screen
 set lazyredraw
 
@@ -23,9 +29,25 @@ set nobackup
 set incsearch
 set ignorecase
 
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 color wellsokai "monokai
 colorscheme wellsokai "monokai
 
+set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 ino " ""<left>
@@ -37,7 +59,3 @@ ino {<CR> {<CR>}<ESC>O
 
 "execute pathogen#infect()
 "call pathogen#helptags()
-
-"nmap <F8> :TagbarToggle<CR>
-"map <C-m> !:make<CR>
-"map <C-s> :w<CR>
