@@ -18,8 +18,8 @@ set nobackup
 set incsearch
 set ignorecase
 
-color monokai
-colorscheme monokai
+color wellsokai "monokai
+colorscheme wellsokai "monokai
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
