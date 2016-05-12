@@ -18,7 +18,7 @@ set nobackup
 set incsearch
 set ignorecase
 
-"color codeschool
+color monokai
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
