@@ -10,6 +10,8 @@ set number
 set hlsearch
 set incsearch
 
+set backspace=2
+
 "set list
 "set listchars=tab:▸\
 
