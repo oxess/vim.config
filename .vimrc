@@ -32,7 +32,6 @@ ino {<CR> {<CR>}<ESC>O
 "execute pathogen#infect()
 "call pathogen#helptags()
 
-""nmap <F8> :TagbarToggle<CR>
-
+"nmap <F8> :TagbarToggle<CR>
 "map <C-m> !:make<CR>
 "map <C-s> :w<CR>
