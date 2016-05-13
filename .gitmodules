@@ -4,7 +4,7 @@
 
 [submodule "nerdtree"]
 	path = bundle/nerdtree
-	url = git@github.com:crooloose/nerdtree.git
+	url = git@github.com:scrooloose/nerdtree.git
 
 [submodule "vim-airline"]
 	path = bundle/vim-airline
@@ -16,4 +16,4 @@
 
 [submodule "vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = git@github.com:virblade/vim-gitgutter.git
+	url = git@github.com:airblade/vim-gitgutter.git
