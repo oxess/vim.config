@@ -1,0 +1,19 @@
+[submodule "Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+
+[submodule "nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/crooloose/nerdtree.git
+
+[submodule "vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+
+[submodule "vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+
+[submodule "vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/virblade/vim-gitgutter.git
