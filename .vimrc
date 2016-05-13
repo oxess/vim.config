@@ -18,7 +18,8 @@ set pastetoggle=<F2>
 set showmode
 
 "Lazy reload screen, this don't redraw full screen
-set lazyredraw
+"But this make too bugs i screen buffor
+"set lazyredraw
 
 set backspace=2
 
