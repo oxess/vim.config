@@ -5,6 +5,7 @@ set laststatus=2
 set autoindent
 syntax on
 set ts=2
+set shiftwidth=2
 set background=dark
 set number
 set hlsearch
@@ -33,16 +34,25 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
+	Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+	Plugin 'vim-airline/vim-airline'
+	Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'airblade/vim-gitgutter'
+	Plugin 'airblade/vim-gitgutter'
 
-Plugin 'scrooloose/nerdtree'
+	Plugin 'SirVer/ultisnips'
+	Plugin 'honza/vim-snippets'
+
+	Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:UltiSnipsEditSplit="vertical"
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -56,8 +66,8 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 map <C-n> :NERDTreeToggle<CR>
 
-ino " ""<left>
-ino ' ''<left>
+"ino " ""<left>
+"ino ' ''<left>
 ino ( ()<left>
 ino [ []<left>
 ino { {}<left>
