@@ -5,3 +5,5 @@ git submodule update
 
 rm ../.vimrc
 ln .vimrc ..
+
+vim +PluginInstall +qall
