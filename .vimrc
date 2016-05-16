@@ -21,6 +21,9 @@ set showmode
 "But this make too bugs i screen buffor
 "set lazyredraw
 
+"For performance
+set ttyfast
+
 set backspace=2
 
 "set list
