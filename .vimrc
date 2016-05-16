@@ -10,6 +10,7 @@ set background=dark
 set number
 set hlsearch
 set incsearch
+set cursorline
 
 set mouse=a
 
