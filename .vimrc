@@ -44,7 +44,8 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 
-	Plugin 'airblade/vim-gitgutter'
+	"Plugin 'airblade/vim-gitgutter'
+	Plugin 'tpope/vim-fugitive'
 
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
