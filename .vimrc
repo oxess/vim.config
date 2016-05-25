@@ -44,11 +44,13 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 
-	"Plugin 'airblade/vim-gitgutter'
+	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
 
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
+	
+	Plugin 'ryanoasis/vim-devicons'
 
 	Plugin 'scrooloose/nerdtree'
 
@@ -64,7 +66,21 @@ colorscheme wellsokai "monokai
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
+let g:airline_powerline_fonts=1
+let g:Powerline_symbols='unicode'
+
+set encoding=utf8
+
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+
 map <C-n> :NERDTreeToggle<CR>
+
+let g:webdevicons_enable=1
+let g:webdevicons_enable_nerdtree=1
+let g:webdevicons_enable_airline_statusline=1
+
 
 "ino " ""<left>
 "ino ' ''<left>
