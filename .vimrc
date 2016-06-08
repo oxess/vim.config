@@ -54,6 +54,8 @@ call vundle#begin()
 
 	Plugin 'scrooloose/nerdtree'
 
+	Plugin 'mattn/emmet-vim'
+
 call vundle#end()
 
 nnoremap <F2> :set invpaste paste?<CR>
