@@ -56,6 +56,8 @@ call vundle#begin()
 
 	Plugin 'mattn/emmet-vim'
 
+	Plugin 'tomtom/tcomment_vim'
+
 call vundle#end()
 
 nnoremap <F2> :set invpaste paste?<CR>
