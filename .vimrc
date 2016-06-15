@@ -76,7 +76,7 @@ let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
 
 set encoding=utf8
-
+set fencs=utf8
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
 
 map <C-n> :NERDTreeToggle<CR>
