@@ -23,7 +23,7 @@ set showmode
 "set lazyredraw
 
 "For performance
-set ttyfast
+" set ttyfast
 
 set backspace=2
 
@@ -77,9 +77,12 @@ let g:Powerline_symbols='unicode'
 
 set encoding=utf8
 set fencs=utf8
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+if has( 'gui_running' )
+	set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
+endif
 
 map <C-n> :NERDTreeToggle<CR>
+map <F3> :noh<CR>
 
 let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
