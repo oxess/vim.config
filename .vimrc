@@ -79,6 +79,7 @@ set encoding=utf8
 set fencs=utf8
 if has( 'gui_running' )
 	set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h12
+	set guioptions-=L
 endif
 
 map <C-n> :NERDTreeToggle<CR>
