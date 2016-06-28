@@ -2,6 +2,9 @@ set nocompatible
 
 set laststatus=2
 
+"Disable .swp files
+set noswapfile
+
 set autoindent
 syntax on
 set ts=2
