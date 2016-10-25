@@ -5,6 +5,8 @@ set laststatus=2
 "Disable .swp files
 set noswapfile
 
+set timeoutlen=1000
+
 set autoindent
 syntax on
 set ts=2
