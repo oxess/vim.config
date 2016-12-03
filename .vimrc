@@ -2,6 +2,8 @@ set nocompatible
 
 set laststatus=2
 
+let NERDTreeIgnore = ['\.pyc$']
+
 "Disable .swp files
 set noswapfile
 
