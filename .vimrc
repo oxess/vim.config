@@ -94,6 +94,10 @@ let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
 let g:webdevicons_enable_airline_statusline=1
 
+let NERDTreeIgnore = [ '\.pyc$' ]
+
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+
 
 "ino " ""<left>
 "ino ' ''<left>
