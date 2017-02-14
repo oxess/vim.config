@@ -16,6 +16,7 @@ set number
 set hlsearch
 set incsearch
 set cursorline
+set wildmenu
 
 set mouse=a
 
