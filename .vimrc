@@ -20,6 +20,8 @@ set wildmenu
 
 set mouse=a
 
+nnoremap <F5> :Autoformat<CR>
+nnoremap <F3> :noh<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
@@ -53,6 +55,7 @@ call vundle#begin()
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
 
+	Plugin 'Chiel92/vim-autoformat'
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
 	
