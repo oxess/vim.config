@@ -5,6 +5,8 @@ set laststatus=2
 "Disable .swp files
 set noswapfile
 
+set timeoutlen=1000
+
 set autoindent
 syntax on
 set ts=2
@@ -14,9 +16,12 @@ set number
 set hlsearch
 set incsearch
 set cursorline
+set wildmenu
 
 set mouse=a
 
+nnoremap <F5> :Autoformat<CR>
+nnoremap <F3> :noh<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
@@ -53,6 +58,7 @@ call vundle#begin()
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
 
+	Plugin 'Chiel92/vim-autoformat'
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
 	
@@ -100,6 +106,10 @@ map <F3> :noh<CR>
 let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
 let g:webdevicons_enable_airline_statusline=1
+
+let NERDTreeIgnore = [ '\.pyc$' ]
+
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 
 
 "ino " ""<left>
