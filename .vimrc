@@ -47,6 +47,9 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 
+	" Themes
+	Plugin 'dikiaap/minimalist'
+
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
 
@@ -67,11 +70,17 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-color wellsokai "monokai
-colorscheme wellsokai "monokai
+color minimalist "wellsokai monokai
+colorscheme minimalist "wellsokai monokai
 
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+" theme minimalist
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
 
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
