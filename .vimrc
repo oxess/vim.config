@@ -18,9 +18,12 @@ set number
 set hlsearch
 set incsearch
 set cursorline
+set wildmenu
 
 set mouse=a
 
+nnoremap <F5> :Autoformat<CR>
+nnoremap <F3> :noh<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
@@ -51,9 +54,13 @@ call vundle#begin()
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
 
+	" Themes
+	Plugin 'dikiaap/minimalist'
+
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'tpope/vim-fugitive'
 
+	Plugin 'Chiel92/vim-autoformat'
 	Plugin 'SirVer/ultisnips'
 	Plugin 'honza/vim-snippets'
 	
@@ -71,11 +78,17 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-color wellsokai "monokai
-colorscheme wellsokai "monokai
+color minimalist "wellsokai monokai
+colorscheme minimalist "wellsokai monokai
 
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+" theme minimalist
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
 
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
@@ -95,6 +108,10 @@ map <F3> :noh<CR>
 let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
 let g:webdevicons_enable_airline_statusline=1
+
+let NERDTreeIgnore = [ '\.pyc$' ]
+
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 
 
 "ino " ""<left>
