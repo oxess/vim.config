@@ -2,7 +2,7 @@
 
 ## Installation:
 
-1. Clone repo to home directory as .vim dir with use: `clone http://github.com/oxess/vim.config.git .vim`,
+1. Clone repo to home directory as .vim dir with use: `git clone http://github.com/oxess/vim.config.git .vim`,
 2. Go to .vim directory: `cd .vim`,
 3. Use bash script for install plugin and update repo: `bash update.bash`,
 4. It's all.
