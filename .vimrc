@@ -68,6 +68,7 @@ call vundle#begin()
 
 	Plugin 'scrooloose/nerdtree'
 
+	Plugin 'chr4/nginx.vim'
 	Plugin 'mattn/emmet-vim'
 
 	Plugin 'tomtom/tcomment_vim'
