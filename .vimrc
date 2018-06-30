@@ -22,6 +22,12 @@ set wildmenu
 
 set mouse=a
 
+
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
 nnoremap <F5> :Autoformat<CR>
 nnoremap <F3> :noh<CR>
 nnoremap <F2> :set invpaste paste?<CR>
