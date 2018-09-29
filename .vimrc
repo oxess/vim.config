@@ -19,7 +19,9 @@ set hlsearch
 set incsearch
 set cursorline
 set wildmenu
+set modeline
 
+set modelines=5
 set mouse=a
 
 
